@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <a href="./index.html">Home</a>
+    </header>
+    <main>
+        <h1>Contact</h1>
+        <form action="#" method="GET">
+            <div class = "form-row">
+                <label>
+                    First Name:
+                    <input type="text" name = "first-name" required>
+                </label>
+            </div>
+            <div class = "form-row">
+                <label>
+                    Last Name:
+                    <input type="text" name = "last-name" required>
+                </label>
+            </div>
+           <div class = "form-row">
+                <label>
+                    Email:
+                    <input type="email" name = "email" required>
+                </label>
+            </div>
+          <div class = "form-row">
+                <label>
+                    Message:
+                    <textarea name="message" cols="30" rows="10"></textarea>
+                </label>
+            </div>
+            <div class = "form-row">
+                <label>
+                    Gender:
+                    <select name="Gender">
+                        <option value="m">Male</option>
+                        <option value="f">Female</option>
+                        <option value="fucking-retarded">Menatally Ill</option>
+                        <option value="na">Choose not to answer</option>
+                    </select>
+                </label>
+            </div>
+            <div class="form-row">
+                <fieldset>
+                    <legend>Topic</legend>
+                    <label>
+                        <input type="radio" name="topic" value="html">
+                        HTML
+                    </label>
+                    <label>
+                        <input type="radio" name="topic" value="css">
+                        CSS
+                    </label>
+                    <label>
+                        <input type="radio" name="topic" value="js">
+                        JavaScript
+                    </label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <legend>Request</legend>
+                    <label>
+                        <input type="checkbox" name="advice" checked>
+                        Advice
+                    </label>
+                    <label>
+                        <input type="checkbox" name="information">
+                        Information
+                    </label>
+                    <label>
+                        <input type="checkbox" name="motivation">
+                        Motivation
+                    </label>
+                </fieldset>
+            </div>
+            <div>
+                <fieldset>
+                    <label>
+                        Urgenct (0-10)
+                        <input type="range" min="0" max="10" name="urgency" value="0">
+                    </label>
+                </fieldset>
+            </div>
+            <div class="form-row">
+                <button type = "submit">Send</button>
+                <!--<input type="submit" value="send"> another way to do the same thing-->
+                <button type = "reset">Clear</button>
+            </div>
+        </form>
+        <hr>
+        <H1>AI Generated Form</H1> <!--AI Generated form, I had to remove <BR> tags and change the form action to # methot to get -->
+        <form action="#" method="get">
+    
+            <h2>Contact / Request Form</h2>
+            
+            <div>
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName" required>
+            </div>
+            
+            <div>
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName" required>
+            </div>
+            
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <fieldset>
+                <legend>Main Topic (choose one):</legend>
+                
+                <div>
+                <input type="radio" id="support" name="topic" value="support" required>
+                <label for="support">Technical Support</label>
+                </div>
+                
+                <div>
+                <input type="radio" id="billing" name="topic" value="billing">
+                <label for="billing">Billing / Payment</label>
+                </div>
+                
+                <div>
+                <input type="radio" id="feature" name="topic" value="feature">
+                <label for="feature">Feature Request</label>
+                </div>
+                
+                <div>
+                <input type="radio" id="other" name="topic" value="other">
+                <label for="other">Other</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Request Topics (select all that apply):</legend>
+                
+                <div>
+                <input type="checkbox" id="refund" name="requests" value="refund">
+                <label for="refund">Refund Request</label>
+                </div>
+                
+                <div>
+                <input type="checkbox" id="upgrade" name="requests" value="upgrade">
+                <label for="upgrade">Account Upgrade</label>
+                </div>
+                
+                <div>
+                <input type="checkbox" id="demo" name="requests" value="demo">
+                <label for="demo">Request Demo</label>
+                </div>
+                
+                <div>
+                <input type="checkbox" id="callback" name="requests" value="callback">
+                <label for="callback">Request Callback</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="urgency">Urgency Level:</label><br>
+                <input type="range" id="urgency" name="urgency" 
+                    min="1" max="10" step="1" value="5">
+                <span>1 = Not urgent &nbsp; • &nbsp; 10 = Critical / ASAP</span>
+                <!--<output name="urgencyValue">5</output>-->
+            </div>
+
+            <div style="margin-top: 1.5rem;">
+                <button type="submit">Submit Request</button>
+                <button type="reset">Clear Form</button>
+            </div>
+
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
