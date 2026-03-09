@@ -1,0 +1,66 @@
+*{
+    border-style: solid;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgba(255,255,255,.7);
+    font-family: 'Macondo';
+    color: darkgreen;
+    font-weight: bold;
+}
+P{
+    border: 3px solid black;
+
+}
+ul{
+    list-style-type:square ;
+}
+ul,ol{
+    padding-left: 40px;
+    margin: 4px;
+    /*font-size: 2rem;
+    font-size: 5vh;
+    font-size: 75%;
+    font-size: 2em;*/
+    font-size: 5vw;
+    
+}
+.highlighted{
+    background-color: aquamarine;
+    border: 3px ridge;
+}
+#some-id{ /* not recommended because it only styles a single element*/
+    border: 5px outset greenyellow;
+}
+[type=text],[type=email]{
+    padding: 7px;
+}
+h1,h2{
+    font-family: 'Pinyon Script';
+    text-align: center;
+    color:darkgreen;
+    text-decoration: underline;
+    font-weight: bold;
+    font-style: italic;
+}
+html{
+    font-size: 25px;
+}
+.nav-header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+
+}
+
+.profile-image{
+    height: 200px;
+    border-radius: 50% 25%;
+}
+html{
+    background-image: url("../img/1.jpg");
+    background-size: 100dvw;
+    background-attachment:fixed;
+
+}
