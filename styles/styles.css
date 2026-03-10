@@ -44,9 +44,7 @@ h1,h2{
     font-weight: bold;
     font-style: italic;
 }
-html{
-    font-size: 25px;
-}
+
 .nav-header{
     display: flex;
     justify-content:space-around;
@@ -62,5 +60,35 @@ html{
     background-image: url("../img/1.jpg");
     background-size: 100dvw;
     background-attachment:fixed;
+    font-size: 25px;
 
+}
+input{
+    width:50%;
+    margin: 10px;
+    padding: 12 px 20px;
+}
+
+.contact-us-fields{
+    display:flex;
+    justify-content: center;
+}
+
+
+button{
+    background-color: cornsilk;
+    color: darkgreen;
+    font-size: 5vw;
+    margin: 5%;
+    font-family: 'Macondo';
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px;
+    padding: 15px;
+    border-color: darkgreen;
+
+}
+
+button:hover{
+    background-color: antiquewhite;
+    box-shadow: 10px 10px 20px;
 }

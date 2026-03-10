@@ -1,0 +1,128 @@
+/* ==========================================================================
+   1. Base / Reset
+   ========================================================================== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 25px;           /* base font size – consider 62.5% for easier rem usage */
+  background-image: url("../img/1.jpg");
+  background-size: 100dvw;
+  background-attachment: fixed;
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.7);
+  font-family: 'Macondo', system-ui, sans-serif; /* fallback fonts */
+  color: darkgreen;
+  font-weight: bold;
+  line-height: 1.4;          /* added for better readability */
+}
+
+/* ==========================================================================
+   2. Typography & Text elements
+   ========================================================================== */
+
+p {
+  border: 3px solid black;
+}
+
+ul {
+  list-style-type: square;
+}
+
+ul,
+ol {
+  padding-left: 40px;
+  margin: 4px 0;
+  font-size: 5vw;
+}
+
+h1,
+h2 {
+  font-family: 'Pinyon Script', cursive, system-ui;
+  text-align: center;
+  color: darkgreen;
+  text-decoration: underline;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* ==========================================================================
+   3. Forms & Inputs
+   ========================================================================== */
+
+input[type="text"],
+input[type="email"] {
+  padding: 7px;
+  width: 50%;
+  margin: 10px 0;
+}
+
+input {
+  padding: 12px 20px;        /* overriding the more specific one above if needed */
+}
+
+/* ==========================================================================
+   4. Layout & Components
+   ========================================================================== */
+
+.nav-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.profile-image {
+  height: 200px;
+  border-radius: 50% 25%;
+}
+
+.contact-us-fields {
+  display: flex;
+  justify-content: center;
+}
+
+/* ==========================================================================
+   5. Buttons & Interactive
+   ========================================================================== */
+
+button {
+  background-color: cornsilk;
+  color: darkgreen;
+  font-family: 'Macondo', system-ui, sans-serif;
+  font-size: 5vw;
+  margin: 5%;
+  padding: 15px 30px;        /* more balanced padding */
+  border: 2px solid darkgreen;
+  border-radius: 50%;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.25s ease; /* smooth hover */
+}
+
+button:hover {
+  background-color: antiquewhite;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px); /* subtle lift effect */
+}
+
+/* ==========================================================================
+   6. Utility classes
+   ========================================================================== */
+
+.highlighted {
+  background-color: aquamarine;
+  border: 3px ridge currentColor; /* using currentColor can be handy */
+}
+
+/* Optional – avoid ID selectors when possible (low reusability) */
+#some-id {
+  border: 5px outset greenyellow;
+}
